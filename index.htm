@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style>
+html {
+ height:100%;
+ border-bottom: 25px solid #000000;
+}
+body {
+  height:100%;
+  background-color: black;
+  border: 25px solid #000000;
+  border-bottom: 25px solid #000000;
+  background-image: radial-gradient(
+    rgba(0, 150, 0, 0.25), black 110%
+  );
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  padding: 2rem;
+  color: white;
+  font: 1.3rem Inconsolata, monospace;
+  font-size: 1vw;
+  text-shadow: 0 0 5px #C8C8C8;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(black, 0.15),
+      rgba(black, 0.15) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+    pointer-events: none;
+  }
+}
+::selection {
+  background: #0080FF;
+  text-shadow: none;
+}
+pre {
+  margin: 0;
+}
+</style>
+<link rel="stylesheet" href="termynal.css">
+</head>
+<body>
+<div id="termynal" data-termynal data-ty-delay="0">
+<span data-ty="login" data-ty-delay="20" data-ty-typeDelay="262">root</span>
+<span data-ty="password" data-ty-delay="3000" data-ty-cursor="▋">  </span>
+<span data-ty data-ty-delay="0"></span>
+<span data-ty data-ty-delay="0"></span>
+<span data-ty><pre>Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-108-generic x86_64)
+
+
+  System load:  0.0                Processes:             19
+  Usage of /:   3.4% of 8.49TB     Users logged in:       0
+  Memory usage: 9%                 IP address for eth0:   192.168.201.11
+  Swap usage:   0%
+
+
+1 package can be updated.
+0 updates are security updates.</pre></span>
+<span data-ty data-ty-delay="0"></span>
+<span data-ty data-ty-delay="4050" data-ty-cursor="▋">Loading.. Please Wait...</span>
+<span data-ty data-ty-delay="0"></span>
+<span data-ty data-ty-delay="0"></span>
+<span data-ty="input" data-ty-delay="0">bash -c ./website</span>
+<span data-ty data-ty-delay="1250">bash: ./website: No such file or directory</span>
+<span data-ty="input" data-ty-delay="1650" data-ty-cursor="▋" data-ty-typeDelay="-200">#@$&@*#@#$*&@*#$&@(#@&$</span>
+<span data-ty data-ty-delay="1200">bash: #@$&@*#@#$*&@*#$&@(#@&$: No such file or directory</span>
+<span data-ty="input" data-ty-delay="20">?help</span>
+<span data-ty data-ty-delay="0"></span>
+<span data-ty data-ty-delay="0">ERROR: We are currently under construction.</span>
+<span data-ty data-ty-delay="0">            Try coming back later!</span>
+<span data-ty data-ty-delay="0"></span>
+<span data-ty data-ty-delay="0">                 -REDD</span>
+<span data-ty></span>
+<span data-ty="input" data-ty-cursor="▋" data-ty-typeDelay="250">exit</span>
+<span data-ty data-ty-delay="1650">disconnected.</span>
+<script src="termynal.js" data-termynal-container="#termynal">
+var termynal = new Termynal('#termynal', { startDelay: 600 })
+</script>
+</body>
+</html>
