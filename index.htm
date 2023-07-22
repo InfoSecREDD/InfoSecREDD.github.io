@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<meta name="viewport" content="target-densitydpi=device-dpi">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <style>
- @-ms-viewport{
+ @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+ @-ms-viewport {
   width: device-width;
 }
 html {
