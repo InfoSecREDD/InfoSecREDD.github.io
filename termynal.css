@@ -6,7 +6,7 @@
 }
 
 [data-termynal] {
-    max-width: 100%;
+ #   max-width: 100%;
     color: var(--color-text);
     font-size: 1vw;
     border-radius: 4px;
